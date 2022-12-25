@@ -2,10 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import client from '../sanity'
+import { useEffect,useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  console.log("Hello world");
+
+  const [posts, getPosts] = useState([]);
+  useEffect(()=>{
+    const query=`*[_type=="post"]{...}`;
+    client.fetch(query).then(data=>{
+      getPosts(data);
+    })
+  },[]);
+  console.log(posts);
   return (
     <>
       <Head>
