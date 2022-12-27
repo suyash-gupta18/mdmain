@@ -32,7 +32,7 @@ export default function Home() {
   },[]);
   console.log(posts);
   return (
-    <>
+    <div>
       
       <Head>
         <title>Mailer-Daemon</title>
@@ -44,10 +44,11 @@ export default function Home() {
       {/* <Navbar /> */}
       {posts?.map(post =>{
         return(
-        <Link key={post._id} href="/post/${post.slug.current}">
-          <div className="image">
-            <img className="main image" style={{ height:200 , width:200, marginTop: 50 , marginLeft:50 ,flexDirection : 'row', display: 'inline-block'}} src={urlFor(post.mainImage).url()} alt="" />
-            <div className="">
+        
+        <Link key={post._id} href={`/post/${post.slug.current}`}>
+          <div className="overflow-hidden border rounded-lg cursor-pointer group">
+            <img className="object-cover w-full transition-transform duration-200 ease-in-out h-60 group-hover:scale-105" src={urlFor(post.mainImage).url()} alt="" />
+            <div className="flex justify-between p-5 bg-white">
               <div>
                 <p className="post title" style={{ fontSize:18,marginLeft:50}}>{post.title}</p>
                 <p className="author name" style={{ fontSize:14,marginLeft:50 }} >{/*{post.description}*/} by {post.author.name}</p>
@@ -65,6 +66,6 @@ export default function Home() {
         
         
       )}
-    </>
+    </div>
   )
 }
