@@ -1,18 +1,17 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import client from '../sanity'
 import { urlFor } from '../sanity'
 import { useEffect,useState } from 'react'
 import Link from 'next/link'
+import Header from '../components/Header'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  console.log("Hello world");
+  // console.log("Hello world");
 
   const [posts, getPosts] = useState([]);
   useEffect(()=>{
@@ -33,7 +32,7 @@ export default function Home() {
   },[]);
   console.log(posts);
   return (
-    <>
+    <div>
       
       <Head>
         <title>Mailer-Daemon</title>
@@ -41,27 +40,32 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+      <Header />
+      {/* <Navbar /> */}
       {posts?.map(post =>{
         return(
+        
         <Link key={post._id} href={`/post/${post.slug.current}`}>
           <div className="overflow-hidden border rounded-lg cursor-pointer group">
             <img className="object-cover w-full transition-transform duration-200 ease-in-out h-60 group-hover:scale-105" src={urlFor(post.mainImage).url()} alt="" />
             <div className="flex justify-between p-5 bg-white">
               <div>
-                <p className="text-lg font-bold">{post.title}</p>
-                <p className="text-xs">{/*{post.description}*/} by {post.author.name}</p>
+                <p className="post title" style={{ fontSize:18,marginLeft:50}}>{post.title}</p>
+                <p className="author name" style={{ fontSize:14,marginLeft:50 }} >{/*{post.description}*/} by {post.author.name}</p>
               </div>
-              <img className="w-12 h-12 rounded-full" src={urlFor(post.author.image).url()} alt="" />
+              {/* <img className="author image" style={{ height: 80 , width:80, marginLeft:50 }} src={urlFor(post.author.image).url()} alt="" /> */}
             </div>
           </div>
+         
         </Link>
+        
+        
         )
       }
        
         
         
       )}
-    </>
+    </div>
   )
 }

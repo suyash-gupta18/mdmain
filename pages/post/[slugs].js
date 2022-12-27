@@ -1,7 +1,7 @@
 import { urlFor } from '../../sanity'
 import client from '../../sanity'
 import { Router, useRouter } from 'next/router'
-import PortableText from 'react-portable-text'
+// import PortableText from 'react-portable-text'
 //import { useForm, SubmitHandler } from 'react-hook-form'
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
