@@ -6,7 +6,7 @@ const Header = () => {
         
            <div>
              <h1>
-               Mailer Daemon
+              <div className='heading' style={{ marginLeft:20 }}>Mailer Daemon</div> 
              </h1>
                
                <div className='placementor' >

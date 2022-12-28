@@ -6,6 +6,7 @@ import { urlFor } from '../sanity'
 import { useEffect,useState } from 'react'
 import Link from 'next/link'
 import Header from '../components/Header'
+import Footer from '../components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -41,14 +42,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* <Navbar /> */}
+      <Footer />
+      
+      
       {posts?.map(post =>{
         return(
         
         <Link key={post._id} href={`/post/${post.slug.current}`}>
-          <div className="overflow-hidden border rounded-lg cursor-pointer group">
-            <img className="object-cover w-full transition-transform duration-200 ease-in-out h-60 group-hover:scale-105" src={urlFor(post.mainImage).url()} alt="" />
-            <div className="flex justify-between p-5 bg-white">
+          <div className="" style={{ display: 'inline-block' }}>
+            <img className="main image" style={{ height:160 , width:160, marginLeft:40 , marginTop:30  }} src={urlFor(post.mainImage).url()} alt="" />
+            <div>
               <div>
                 <p className="post title" style={{ fontSize:18,marginLeft:50}}>{post.title}</p>
                 <p className="author name" style={{ fontSize:14,marginLeft:50 }} >{/*{post.description}*/} by {post.author.name}</p>
@@ -60,12 +63,14 @@ export default function Home() {
         </Link>
         
         
+        
         )
       }
-       
-        
-        
-      )}
+      
+      
+      
+      )
+      }
     </div>
   )
 }
