@@ -105,3 +105,49 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.head
+{
+display: flex;
+height: 77px;
+width: 100vw;
+padding-top: 14px;
+background-color: #02111E;
+}
+.h1
+{
+    color: #F17936;
+    font-size: 30px;
+    padding-left: 11px;
+}
+.placementor
+{
+    font-size: 26px;
+margin-left: 886px;
+padding-top: 11px;
+color: #8EFAFA;
+}
+.iitism
+{
+    font-size: 25px;
+margin-left: 50px;
+padding-top: 12px;
+color: #8EFAFA;
+}
+.h2
+{
+  color: #79DF14;
+  font-size: 30px;
+  padding-left: 7px;
+}
+.img
+{
+  height: 49px;
+  padding-left: 24px;
+  width: 87px;
+}
+.h3
+{
+  color: white;
+}
