@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footerfinal1 from "../components/Footerfinal1";
+import Img from "../components/Img";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Img/>
       <div className="lsttrend">
         <div className="latestpst">
           <h1 className="indexh1">Latest Posts</h1>

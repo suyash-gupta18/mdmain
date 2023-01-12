@@ -147,6 +147,15 @@ color: black;
   padding-left: 24px;
   width: 87px;
 }
+.image
+{
+  height: 500px;
+  width:1370px;
+  margin-left: 40px;
+  margin-right: 40px;  
+  margin-top: 30px;
+  border-radius: 10px;
+}
 .h3
 {
   color: white;
