@@ -113,7 +113,7 @@ display: flex;
 height: 77px;
 width: 100vw;
 padding-top: 14px;
-background-color: #02111E;
+background-color:white;
 }
 .h1
 {
@@ -126,14 +126,14 @@ background-color: #02111E;
     font-size: 26px;
 margin-left: 886px;
 padding-top: 11px;
-color: #8EFAFA;
+color: black;
 }
 .iitism
 {
     font-size: 25px;
 margin-left: 50px;
 padding-top: 12px;
-color: #8EFAFA;
+color: black;
 }
 .h2
 {
