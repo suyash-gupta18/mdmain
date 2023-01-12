@@ -151,3 +151,49 @@ color: #8EFAFA;
 {
   color: white;
 }
+.mainbdy
+{
+  min-height: 100vh;;
+}
+/* .foot
+{
+  width: 100vw;
+  background-color:  #54157B;
+} */
+.indexh1
+{
+  padding-left: 269px;
+padding-top: 13px;
+font-size: 34px;
+font-family: 'Exo 2', sans-serif;
+}
+.trendh1
+{
+  padding-left: 254px;
+padding-top: 13px;
+font-size: 34px;
+font-family: 'Exo 2', sans-serif;
+}
+.besth1
+{
+  padding-left: 329px;
+padding-top: 13px;
+font-size: 34px;
+font-family: 'Exo 2', sans-serif;
+}
+.glimseh1
+{
+  padding-left: 529px;
+padding-top: 13px;
+font-size: 34px;
+font-family: 'Exo 2', sans-serif;
+padding-bottom: 18px;
+}
+.lsttrend
+{
+  display: flex;
+}
+.vdo
+{
+  padding-left: 35px;
+}
