@@ -92,10 +92,13 @@ export default function Home() {
                   <img
                     className="main image"
                     style={{
-                      height: 90,
+                      height: 100,
                       width: 100,
                       marginLeft: -60,
-                      marginBottom: 35,
+                      // marginBottom: 35,
+                      marginTop:30,
+                      paddingBottom:30
+                    
                     }}
                     src={urlFor(post.mainImage).url()}
                     alt=""

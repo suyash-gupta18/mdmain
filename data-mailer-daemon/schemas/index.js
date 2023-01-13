@@ -5,3 +5,4 @@ import author from './author'
 import comment from './comment'
 
 export const schemaTypes = [post, author, category, blockContent, comment]
+ 
