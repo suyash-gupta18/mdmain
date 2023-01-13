@@ -167,7 +167,7 @@ export default function Home() {
         <iframe
           className="vdo"
           width="373"
-          height="208"
+          height="207"
           src="https://www.youtube.com/embed/Q5zUix83988"
           title="YouTube video player"
           frameborder="0"
