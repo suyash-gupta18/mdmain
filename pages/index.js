@@ -92,7 +92,7 @@ export default function Home() {
                   <img
                     className="main image"
                     style={{
-                      height: 100,
+                      height: 105,
                       width: 100,
                       marginLeft: -60,
                       // marginBottom: 35,

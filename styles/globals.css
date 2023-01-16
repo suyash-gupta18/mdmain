@@ -180,9 +180,20 @@ padding-top: 13px;
 font-size: 34px;
 font-family: 'Exo 2', sans-serif;
 }
+div.trending{
+  margin:10px, 10px;
+  padding-left:90px;
+  padding-top: 18px;
+  /* background-color: green; */
+  width: 800px;
+  height: 510px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align:justify;
+}
 .trendh1
 {
-  padding-left: 254px;
+  padding-left: 10px;
 padding-top: 13px;
 font-size: 34px;
 font-family: 'Exo 2', sans-serif;
