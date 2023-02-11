@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import client from "../sanity";
 import { urlFor } from "../sanity";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footerfinal1 from "../components/Footerfinal1";
@@ -27,11 +27,19 @@ export default function Home() {
         slug,
         mainImage
     }`;
-    client.fetch(query).then((data) => {
+    //  console.log(posts)
+    //  console.log("he")
+     client.fetch(query).then((data) => {
       getPosts(data);
     });
   }, []);
-  console.log(posts);
+
+  const button=useCallback(() => {
+
+  },[]);
+
+  // const button2=useMemo()
+  
   return (
     <div className="mainbdy">
       <Head>
@@ -41,7 +49,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Img/>
+      <Img/> 
+
       <Button/>
       <div className="lsttrend">
         <div className="latestpst">

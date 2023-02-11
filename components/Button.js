@@ -2,10 +2,10 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <div>
-        <Button type="button">See All</Button>
+    <div className='b'>
+        <button className='btn' type="button">See All</button>
     </div>
   )
 }
 
-export default Button
+export default React.memo(Button);
