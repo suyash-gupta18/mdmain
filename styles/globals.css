@@ -106,8 +106,137 @@ a {
   }
 }
 
+.navbar{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 10px ;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
 
-.head
+.navbar .logo a{
+  margin-left: 35px;
+  color: #fff;
+  font-size: 24px;
+  float: left;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+}
+.logohead{
+  display: flex;
+}
+/* @media only screen and (max-width: 600px) {
+  .logohead h{
+    display: flex;
+    padding-top: 2px;
+    font-size: 12px;
+  }
+} */
+
+.logohead h{
+  color: rgb(237, 130, 0);
+  font-size: 32px;
+  padding-top: 14px;
+  padding-left: 5px;
+  display: flex;
+}
+.img
+{
+  height: 50px;
+   width: 50px;
+}
+@media only screen and (max-width:750px) {
+  .logohead h{
+    color: rgb(220, 103, 0);
+    font-size: 24px;
+    padding-top: 4px;
+    padding-left: 5px;
+    display: flex;
+  }
+  .img
+{
+  height: 38px;
+   width: 38px;
+}
+}
+/* @media only screen and (max-width: 600px) {
+  .img{
+    height:20px;
+    width:20px;
+  }
+} */
+
+@media screen {
+  .image
+{ 
+  /* filter:blur(10px); */
+  height: 500px;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 10px;
+}}
+@media only screen and (max-width:500px) {
+  .image
+  {
+    height: 350px;
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 10px;
+  }
+}
+  /* .image
+{
+  height: 500px;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 10px;
+} */
+
+.navbar ul{
+  float: right;
+  
+  display: inline-flex;
+}
+.menu-list li{
+  padding-top: 14px ;
+  list-style: none;
+}
+.menu-list li a{
+   text-shadow: 1px 1px 0px;
+  color: rgb(255, 119, 0);
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: red;
+}
+@media only screen and (max-width:750px){
+  .menu-list li{
+    padding-top: 8px ;
+    list-style: none;
+  }
+  .menu-list li a{
+ 
+    color: rgb(255, 119, 0);
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+}
+
+/* .head
 {
 display: flex;
 height: 77px;
@@ -141,12 +270,7 @@ color: black;
   font-size: 30px;
   padding-left: 7px;
 }
-.img
-{
-  height: 49px;
-  padding-left: 24px;
-  width: 87px;
-}
+
 .image
 {
   height: 500px;
@@ -159,11 +283,8 @@ color: black;
 .h3
 {
   color: white;
-}
-.glimpseh1{
- padding: 25px;
- margin-left: 465px;
-}
+} */
+
 .mainbdy
 {
   min-height: 100vh;;
@@ -173,12 +294,22 @@ color: black;
   width: 100vw;
   background-color:  #54157B;
 } */
+@media only screen and (max-width:880px){
+   .lsttrend{
+    flex-direction: column;
+   }
+}
+
 .indexh1
 {
-  padding-left: 269px;
+  /* padding-left: 269px;
 padding-top: 13px;
+font-size: 34px;*/
+font-family: 'Exo 2', sans-serif; 
+text-align: center;
 font-size: 34px;
-font-family: 'Exo 2', sans-serif;
+padding-top: 20px;
+color: black;
 }
 div.trending{
   margin:10px, 10px;
@@ -191,10 +322,12 @@ div.trending{
   overflow-y: scroll;
   text-align:justify;
 }
+
 .trendh1
 {
+  text-align: left;
   padding-left: 10px;
-padding-top: 13px;
+padding-top: 10px;
 font-size: 34px;
 font-family: 'Exo 2', sans-serif;
 }
@@ -205,21 +338,67 @@ padding-top: 13px;
 font-size: 34px;
 font-family: 'Exo 2', sans-serif;
 }
-.glimseh1
+.glimpseh1
 {
-  padding-left: 529px;
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+  /* padding-left: 529px;
 padding-top: 13px;
 font-size: 34px;
 font-family: 'Exo 2', sans-serif;
-padding-bottom: 18px;
+padding-bottom: 18px; */
 }
+
 .lsttrend
 {
   display: flex;
 }
+
+.yt{
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
 .vdo
 {
-  padding-left: 35px;
-  height: 200px;
+  padding: 8px;
+  margin: 10px;
+  margin-left: 4vh;
+  height: 220px;
   width: 350px;
+}
+.latestreadimg{
+  margin: 35px 16px 0px 25px;
+  padding:5px;
+  height: 180px;
+  width:220px;
+}
+@media only screen and (max-width: 800px){
+  .latestpst{
+    padding-left: 10px;
+  }
+  .latestreadimg{
+    margin: 20px 10px 0px 10px;
+    padding:5px;
+    height: 220px;
+    width: 325px;
+  }
+}
+.istaicn{
+  padding-left: 2vh;
+}
+.yticn{
+  padding-left: 2vh;
+}
+
+.ftr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cpyryt{
+  font-size: 18px;
+  text-shadow: 2px 2px 5px;
+  color: grey;
 }

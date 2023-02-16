@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       <Header />
       <Img/>
-      <Button/>
+      {/* <Button/> */}
       <div className="lsttrend">
         <div className="latestpst">
           <h1 className="indexh1">Latest Posts</h1>
@@ -52,12 +52,12 @@ export default function Home() {
               <Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className="" style={{ display: "inline-block" }}>
                   <img
-                    className="main image"
+                    className="latestreadimg"
                     style={{
-                      height: 180,
-                      width: 190,
-                      marginLeft: 40,
-                      marginTop: 30,
+                      // height: 180,
+                      // width: 190,
+                      // marginLeft: 40,
+                      // marginTop: 30,
                     }}
                     src={urlFor(post.mainImage).url()}
                     alt=""
@@ -66,13 +66,13 @@ export default function Home() {
                     <div>
                       <p
                         className="post title"
-                        style={{ fontSize: 18, marginLeft: 38 }}
+                        style={{ fontSize: 18, marginLeft: 30 }}
                       >
                         {post.title}
                       </p>
                       <p
                         className="author name"
-                        style={{ fontSize: 14, marginLeft: 39 }}
+                        style={{ fontSize: 14, marginLeft: 32 }}
                       >
                         {" "}
                         by {post.author.name}
@@ -92,7 +92,7 @@ export default function Home() {
               <Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className="" style={{ display:"block" }}>
                   <img
-                    className="main image"
+                    className="popureadimg"
                     style={{
                       height: 105,
                       width: 100,
@@ -100,6 +100,7 @@ export default function Home() {
                       // marginBottom: 35,
                       marginTop:30,
                       paddingBottom:30
+                
                     
                     }}
                     src={urlFor(post.mainImage).url()}
@@ -131,8 +132,9 @@ export default function Home() {
       {/* <div className="bestpost">
         <h1 className="besth1">Best Post</h1>
       </div> */}
+              <h1 className="glimpseh1">Glimpse Of Mailer Daemon</h1>
       <div className="yt">
-        <h1 className="glimpseh1">Glimpse Of Mailer Daemon</h1>
+
         <iframe
           className="vdo"
           width="373"
@@ -176,8 +178,30 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+
+<iframe
+          className="vdo"
+          width="373"
+          height="207"
+          src="https://www.youtube.com/embed/N6CWgqhbwu8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+<iframe
+          className="vdo"
+          width="373"
+          height="207"
+          src="https://www.youtube.com/embed/SljIgF9c9-s"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      {/* <Footerfinal1 /> */}
+      <Footerfinal1 />
     </div>
   );
 }
