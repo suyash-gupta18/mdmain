@@ -365,9 +365,10 @@ padding-bottom: 18px; */
   padding: 8px;
   margin: 10px;
   margin-left: 4vh;
-  height: 220px;
-  width: 350px;
+  height: 200px;
+  width: 330px;
 }
+
 .latestreadimg{
   margin: 35px 16px 0px 25px;
   padding:5px;
@@ -393,12 +394,14 @@ padding-bottom: 18px; */
 }
 
 .ftr{
-  margin-top: 10px;
-  margin-bottom: 20px;
+ 
+  margin-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 .cpyryt{
   font-size: 18px;
   text-shadow: 2px 2px 5px;
   color: grey;
+
 }

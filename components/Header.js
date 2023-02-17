@@ -10,7 +10,7 @@ const Header = () => {
       </div>
       <div><ul class="menu-list">
         <li><a href="https://www.iitism.ac.in/iitismnew/"  target="_blank">IITISM</a></li>
-        <li><a href="#">placementor</a></li>
+        <li><a href="http://placementor-iit-dhanbad.vercel.app" target="_blank">placementor</a></li>
     
         <li><a href="#">Contact</a></li>
       </ul></div>
