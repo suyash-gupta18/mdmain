@@ -141,7 +141,8 @@ a {
 } */
 
 .logohead h{
-  color: rgb(237, 130, 0);
+  font-weight: 600;
+  color: rgb(40, 5, 78);
   font-size: 32px;
   padding-top: 14px;
   padding-left: 5px;
@@ -209,16 +210,15 @@ a {
   list-style: none;
 }
 .menu-list li a{
-   text-shadow: 1px 1px 0px;
-  color: rgb(255, 119, 0);
-  font-size: 22px;
-  font-weight: 500;
+  color: rgb(19, 14, 21);
+  font-size: 20px;
+  font-weight: 800;
   margin-right: 35px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: red;
+  color: rgb(231, 134, 54);
 }
 @media only screen and (max-width:750px){
   .menu-list li{
