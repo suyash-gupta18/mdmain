@@ -356,17 +356,17 @@ padding-bottom: 18px; */
 }
 
 .yt{
-  flex-wrap: wrap;
-  margin-left: 20px;
+  flex-shrink:initial;
+  margin-left: 40px;
+  margin-right: 50px;
 }
 
 .vdo
 {
-  padding: 8px;
-  margin: 10px;
-  margin-left: 4vh;
-  height: 200px;
-  width: 330px;
+  border-radius: 10px;
+  margin: 18px;
+  height: 190px;
+  width: 300px;
 }
 
 .latestreadimg{

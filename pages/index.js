@@ -208,7 +208,30 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+
+<iframe
+          className="vdo"
+          width="373"
+          height="207"
+          src="https://www.youtube.com/embed/PT1l5nwHLAs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          className="vdo"
+          width="373"
+          height="207"
+          src="https://www.youtube.com/embed/X198lAfenQo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
       </div>
+
       <Footerfinal1 />
     </div>
   );
